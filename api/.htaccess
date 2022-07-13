@@ -1,0 +1,17 @@
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+php_value error_reporting 2047
+
+  RewriteEngine On
+	
+	<Files .htaccess>
+    Order allow,deny
+    Deny from all
+  </Files>
+	
+	Options All +Indexes
+
+	RewriteRule ^([a-zA-Z0-9/\-/]+)$ index.php?url=$1 [QSA]
+   
+	IndexOptions +HTMLTable +FancyIndexing

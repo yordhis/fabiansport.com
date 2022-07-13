@@ -1,0 +1,7 @@
+
+RewriteEngine On
+Order deny,allow
+Satisfy Any
+RewriteRule ^([a-zA-Z0-9/\-/]+)$ index.php?url=$1 [QSA]
+	
+
