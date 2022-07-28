@@ -16,27 +16,27 @@
     
     //localhost local debug
 
-    // define('DATABASE', [
-    //     'driver'    => 'mysql',
-    //     'host'      => 'localhost',
-    //     'database'  => 'fs',
-    //     'username'  => 'root',
-    //     'password'  => '',
-    //     'charset'   => 'utf8',
-    //     'collation' => 'utf8_unicode_ci',
-    //     'prefix'    => '',
-    // ]);
-
     define('DATABASE', [
         'driver'    => 'mysql',
         'host'      => 'localhost',
-        'database'  => 'fabiansp_fs',
-        'username'  => 'fabiansport',
-        'password'  => 'Adoracionviva.3467',
+        'database'  => 'fs',
+        'username'  => 'root',
+        'password'  => '',
         'charset'   => 'utf8',
         'collation' => 'utf8_unicode_ci',
         'prefix'    => '',
     ]);
+
+    // define('DATABASE', [
+    //     'driver'    => 'mysql',
+    //     'host'      => 'localhost',
+    //     'database'  => 'fabiansp_fs',
+    //     'username'  => 'fabiansport',
+    //     'password'  => 'Adoracionviva.3467',
+    //     'charset'   => 'utf8',
+    //     'collation' => 'utf8_unicode_ci',
+    //     'prefix'    => '',
+    // ]);
     //id8472058_tienda
 
     //Errores de la base de datos

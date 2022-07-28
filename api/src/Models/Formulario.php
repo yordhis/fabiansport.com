@@ -435,13 +435,15 @@ class Formulario
         case 'email':
           if ($mensaje = Validar::existe($keysValores['valores'][$i], $keysValores['keys'][$i])) return $mensaje;
           if ($mensaje = Validar::longitudPermitida($keysValores['valores'][$i], 200)) return $mensaje;
-          if ($usuario['accion'] != "actualizar"){
-          if ($mensaje =  Validar::noExisteElDato(
-              "Este correo ya esta registrado, ingrese otro por favor",
-              $keysValores['valores'][$i],
-              "usuarios",
-              "correo"
-            )) return $mensaje;
+          if ( !empty($usuario['accion']) ){
+            if ($usuario['accion'] != "actualizar"){
+              if ($mensaje =  Validar::noExisteElDato(
+                  "Este correo ya esta registrado, ingrese otro por favor",
+                  $keysValores['valores'][$i],
+                  "usuarios",
+                  "correo"
+                )) return $mensaje;
+            }
           }
           break;
      
